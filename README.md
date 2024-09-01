@@ -44,15 +44,18 @@ Follow these steps to set up the Weather App on your local machine:
 
 1. **Clone the Repository**:
    Open your terminal and run the following command to clone the repository:
+   ```bash
    git clone <repository-url>
-
-2. **Navigate to the Project Directory**:
+   
+3. **Navigate to the Project Directory**:
    Change to the directory of the cloned repository:
+   ```bash
    cd weather-app
 
-3. **Run the Application**:
+5. **Run the Application**:
    Start the development server with the following command:
+   ```bash
    npm start
 
-4. **Access the App**:
+7. **Access the App**:
    Open your web browser and navigate to http://localhost:3000 to view the application.
