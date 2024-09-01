@@ -26,7 +26,7 @@ The Weather App is a responsive web application that provides users with current
 
 The following dependencies are used in this project:
 
->>> npm install react react-dom tailwindcss react-icons
+npm install react react-dom tailwindcss react-icons
 
 # Weather App Installation Guide
 
@@ -43,15 +43,15 @@ Follow these steps to set up the Weather App on your local machine:
 
 1. **Clone the Repository**:
    Open your terminal and run the following command to clone the repository:
-   >>> git clone <repository-url>
+   git clone <repository-url>
 
 2. **Navigate to the Project Directory**:
    Change to the directory of the cloned repository:
-   >>> cd weather-app
+   cd weather-app
 
 3. **Run the Application**:
    Start the development server with the following command:
-   >>> npm start
+   npm start
 
 4. **Access the App**:
    Open your web browser and navigate to http://localhost:3000 to view the application.
