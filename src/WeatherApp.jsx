@@ -66,11 +66,13 @@ const WeatherApp = () => {
         }
       }
 
-      const forecast = Array.from(forecastMap.entries()).slice(1, 6).map(([day, { temp, icon }]) => ({
-        day,
-        temp,
-        icon,
-      }));
+      const forecast = Array.from(forecastMap.entries())
+        .slice(1, 6)
+        .map(([day, { temp, icon }]) => ({
+          day,
+          temp,
+          icon,
+        }));
       setWeather({
         current: {
           city: data.city.name,
@@ -122,8 +124,30 @@ const WeatherApp = () => {
     fetchWeather("New York");
   }, []);
 
+  const showAlert = () => {
+    alert(
+      "Candidate Name: Aryan Rahul Verma\n\n" +
+        "About PM Accelerator:\n\n"+
+        "The Product Manager Accelerator Program is designed to support PM professionals through every stage of their career. " +
+        "From students looking for entry-level jobs to Directors looking to take on a leadership role, our program has helped " +
+        "hundreds of students fulfill their career aspirations.\n\n" +
+        "Our Product Manager Accelerator community is ambitious and committed. Through our program, they have learned, honed, " +
+        "and developed new PM and leadership skills, giving them a strong foundation for their future endeavors.\n\n" +
+        "Learn product management for free today on our YouTube channel:\n" +
+        "https://www.youtube.com/c/drnancyli?sub_confirmation=1\n\n" +
+        "Interested in PM Accelerator Pro?\n" +
+        "Step 1️⃣: Attend the Product Masterclass to learn more about the program details, price, different packages, " +
+        "and stay until the end to get FREE AI Course.\n\n" +
+        "Learn how to create a killer product portfolio in two weeks that will help you land any PM job (traditional or AI) " +
+        "even if you were laid off or have zero PM experience:\n" +
+        "https://www.drnancyli.com/masterclass\n\n" +
+        "Step 2️⃣: Reserve your early bird ticket and submit an application to talk to our Head of Admission.\n\n" +
+        "Step 3️⃣: Successful applicants join our PMA Pro community to receive customized coaching!"
+    );
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-400 to-blue-700 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-400 to-blue-700 flex flex-col items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full">
         <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Weather App
@@ -205,6 +229,12 @@ const WeatherApp = () => {
           </div>
         )}
       </div>
+      <button
+        onClick={showAlert}
+        className="mt-4 bg-red-500 font-bold text-white p-2 rounded shadow-lg hover:bg-red-600 transition duration-300"
+      >
+        more info
+      </button>
     </div>
   );
 };
