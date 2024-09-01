@@ -26,8 +26,9 @@ The Weather App is a responsive web application that provides users with current
 
 The following dependencies are used in this project:
 
+```bash
 npm install react react-dom tailwindcss react-icons
-
+```
 # Weather App Installation Guide
 
 ## Prerequisites
