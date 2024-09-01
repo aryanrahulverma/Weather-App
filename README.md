@@ -1,4 +1,5 @@
 # Weather App
+![image](https://github.com/user-attachments/assets/659e3bd0-c504-4cb4-b796-47758a0a8782)
 
 ## Overview
 
