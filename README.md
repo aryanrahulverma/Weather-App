@@ -45,7 +45,7 @@ Follow these steps to set up the Weather App on your local machine:
 1. **Clone the Repository**:
    Open your terminal and run the following command to clone the repository:
    ```bash
-   git clone <[repository-url](https://github.com/aryanrahulverma/Weather-App)>
+   git clone <repository-url>
    
 3. **Navigate to the Project Directory**:
    Change to the directory of the cloned repository:
